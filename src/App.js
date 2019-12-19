@@ -23,6 +23,9 @@ const useStyles = makeStyles((theme) => ({
   searchGrid: {
     marginTop: theme.spacing(3),
     marginBottom: theme.spacing(3)
+  },
+  cardMedia: {
+    paddingTop: '56.25%' // 16:9
   }
 }));
 
@@ -55,7 +58,11 @@ function App() {
           {cards.map((card) => (
             <Grid item key={card} xs={12} sm={6} md={4}>
               <Card>
-                <CardMedia image="https://source.unsplash.com/random" title="Image title" />
+                <CardMedia
+                  image="https://source.unsplash.com/random"
+                  title="Image title"
+                  className={classes.cardMedia}
+                />
                 <CardContent>
                   <Typography component="h2" variant="h5">
                     Heading
