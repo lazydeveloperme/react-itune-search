@@ -12,9 +12,11 @@ import {
   Card,
   CardMedia,
   CardContent,
-  CardActions
+  CardActions,
+  Box
 } from '@material-ui/core';
 import { PermMedia } from '@material-ui/icons';
+import { useFormik } from 'formik';
 
 const useStyles = makeStyles((theme) => ({
   appBarIcon: {
@@ -33,6 +35,14 @@ const cards = [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ];
 
 function App() {
   const classes = useStyles();
+  const formik = useFormik({
+    initialValues: {
+      search: ''
+    },
+    onSubmit: (values) => {
+      alert(values.search);
+    }
+  });
 
   return (
     <Fragment>
@@ -44,16 +54,18 @@ function App() {
         </Toolbar>
       </AppBar>
       <Container maxWidth="lg">
-        <Grid container spacing={3} alignItems="center" className={classes.searchGrid}>
-          <Grid item xs={8} sm={9} lg={10}>
-            <TextField label="Search Term" fullWidth />
+        <Box component="form" onSubmit={formik.handleSubmit} mt={3} mb={3}>
+          <Grid container spacing={3} alignItems="center">
+            <Grid item xs={8} sm={9} lg={10}>
+              <TextField name="search" inputProps={formik.getFieldProps('search')} label="Search Term" fullWidth />
+            </Grid>
+            <Grid item xs={4} sm={3} lg={2}>
+              <Button type="Submit" variant="contained" color="primary" size="large" fullWidth>
+                Search
+              </Button>
+            </Grid>
           </Grid>
-          <Grid item xs={4} sm={3} lg={2}>
-            <Button variant="contained" color="primary" size="large" fullWidth>
-              Search
-            </Button>
-          </Grid>
-        </Grid>
+        </Box>
         <Grid container spacing={4}>
           {cards.map((card) => (
             <Grid item key={card} xs={12} sm={6} md={4}>
