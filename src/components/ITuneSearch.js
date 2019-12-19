@@ -11,23 +11,23 @@ function ITuneSearch() {
     <Container maxWidth="lg">
       <SearchForm />
       {media == null && !isLoading ? (
-        <Box mt={5}>
+        <Box mt={3}>
           <Typography variant="h5" color="primary" align="center">
             Enter keyword and click search
           </Typography>
         </Box>
       ) : error ? (
-        <Box mt={5}>
+        <Box mt={3}>
           <Typography variant="h5" color="secondary" align="center">
             {error}
           </Typography>
         </Box>
       ) : isLoading ? (
-        <Box mt={5} display="flex" justifyContent="center">
+        <Box mt={3} display="flex" justifyContent="center">
           <CircularProgress />
         </Box>
       ) : media.length == 0 ? (
-        <Box mt={5}>
+        <Box mt={3}>
           <Typography variant="h5" align="center">
             No result found
           </Typography>

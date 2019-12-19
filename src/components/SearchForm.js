@@ -7,7 +7,7 @@ import * as Yup from 'yup';
 
 const useStyles = makeStyles(() => ({
   textField: {
-    height: 92
+    height: 68
   },
   button: {
     marginTop: 4
