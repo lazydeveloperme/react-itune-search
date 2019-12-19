@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Grid, Typography, CircularProgress } from '@material-ui/core';
+import { Container, Grid, Typography, Box, CircularProgress } from '@material-ui/core';
 import Media from './Media';
 import SearchForm from './SearchForm';
 import { useSelector } from 'react-redux';
@@ -15,7 +15,9 @@ function ITuneSearch() {
           {error}
         </Typography>
       ) : isLoading ? (
-        <CircularProgress />
+        <Box mt={5} display="flex" justifyContent="center">
+          <CircularProgress />
+        </Box>
       ) : (
         media && (
           <Grid container spacing={4}>
