@@ -1,11 +1,22 @@
 import React from 'react';
 import { useFormik } from 'formik';
-import { TextField, Button, Grid, Box } from '@material-ui/core';
+import { makeStyles, TextField, Button, Grid, Box } from '@material-ui/core';
 import { useDispatch } from 'react-redux';
 import { getMedia } from '../store/media';
 import * as Yup from 'yup';
 
+const useStyles = makeStyles(() => ({
+  textField: {
+    height: 92
+  },
+  button: {
+    marginTop: 4
+  }
+}));
+
 function SearchForm() {
+  const classes = useStyles();
+
   const dispatch = useDispatch();
 
   const formik = useFormik({
@@ -31,10 +42,11 @@ function SearchForm() {
             inputProps={formik.getFieldProps('search')}
             label="Search Term"
             fullWidth
+            className={classes.textField}
           />
         </Grid>
         <Grid item xs={4} sm={3} lg={2}>
-          <Button type="submit" variant="contained" color="primary" size="large" fullWidth>
+          <Button type="submit" variant="contained" color="primary" size="large" fullWidth className={classes.button}>
             Search
           </Button>
         </Grid>

@@ -10,8 +10,8 @@ function ITuneSearch() {
   return (
     <Container maxWidth="lg">
       <SearchForm />
-      {media == null ? (
-        <Box mt={5} display="flex" justifyContent="center">
+      {media == null && !isLoading ? (
+        <Box mt={5}>
           <Typography variant="h5" color="primary" align="center">
             Enter keyword and click search
           </Typography>
@@ -27,7 +27,7 @@ function ITuneSearch() {
           <CircularProgress />
         </Box>
       ) : media.length == 0 ? (
-        <Box mt={5} display="flex" justifyContent="center">
+        <Box mt={5}>
           <Typography variant="h5" align="center">
             No result found
           </Typography>
