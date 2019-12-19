@@ -10,7 +10,13 @@ function ITuneSearch() {
   return (
     <Container maxWidth="lg">
       <SearchForm />
-      {error ? (
+      {media == null ? (
+        <Box mt={5} display="flex" justifyContent="center">
+          <Typography variant="h5" color="primary" align="center">
+            Enter keyword and click search
+          </Typography>
+        </Box>
+      ) : error ? (
         <Box mt={5}>
           <Typography variant="h5" color="secondary" align="center">
             {error}
@@ -20,12 +26,16 @@ function ITuneSearch() {
         <Box mt={5} display="flex" justifyContent="center">
           <CircularProgress />
         </Box>
+      ) : media.length == 0 ? (
+        <Box mt={5} display="flex" justifyContent="center">
+          <Typography variant="h5" align="center">
+            No result found
+          </Typography>
+        </Box>
       ) : (
-        media && (
-          <Grid container spacing={4}>
-            {media.map((media) => <Media key={media.trackId} media={media} />)}
-          </Grid>
-        )
+        <Grid container spacing={3}>
+          {media.map((media) => <Media key={media.trackId} media={media} />)}
+        </Grid>
       )}
     </Container>
   );

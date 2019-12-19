@@ -6,7 +6,7 @@ const media = createSlice({
   initialState: {
     isLoading: false,
     error: null,
-    media: []
+    media: null
   },
   reducers: {
     getMediaStart(state) {
