@@ -2,7 +2,7 @@ import { configureStore } from '@reduxjs/toolkit';
 import media from './media';
 
 const store = configureStore({
-  reducer: media,
+  reducer: { media },
   devTools: true
 });
 

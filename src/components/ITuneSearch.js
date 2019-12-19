@@ -10,17 +10,19 @@ function ITuneSearch() {
   return (
     <Container maxWidth="lg">
       <SearchForm />
-      <Grid container spacing={4}>
-        {error ? (
-          <Typography variant="h3" color="error.main">
-            {error}
-          </Typography>
-        ) : isLoading ? (
-          <CircularProgress />
-        ) : (
-          media && media.map((media) => <Media media={media} />)
-        )}
-      </Grid>
+      {error ? (
+        <Typography variant="h3" color="error.main">
+          {error}
+        </Typography>
+      ) : isLoading ? (
+        <CircularProgress />
+      ) : (
+        media && (
+          <Grid container spacing={4}>
+            {media.map((media) => <Media key={media.trackId} media={media} />)}
+          </Grid>
+        )
+      )}
     </Container>
   );
 }
