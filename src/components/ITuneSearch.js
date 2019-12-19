@@ -11,9 +11,11 @@ function ITuneSearch() {
     <Container maxWidth="lg">
       <SearchForm />
       {error ? (
-        <Typography variant="h3" color="error.main">
-          {error}
-        </Typography>
+        <Box mt={5}>
+          <Typography variant="h5" color="secondary" align="center">
+            {error}
+          </Typography>
+        </Box>
       ) : isLoading ? (
         <Box mt={5} display="flex" justifyContent="center">
           <CircularProgress />
