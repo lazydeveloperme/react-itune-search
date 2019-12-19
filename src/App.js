@@ -2,6 +2,8 @@ import React, { Fragment } from 'react';
 import { Toolbar, CssBaseline, AppBar, Typography, makeStyles } from '@material-ui/core';
 import { PermMedia } from '@material-ui/icons';
 import ITuneSearch from './components/ITuneSearch';
+import { Provider } from 'react-redux';
+import store from './store';
 
 const useStyles = makeStyles((theme) => ({
   appBarIcon: {
@@ -20,16 +22,18 @@ function App() {
   const classes = useStyles();
 
   return (
-    <Fragment>
-      <CssBaseline />
-      <AppBar position="relative">
-        <Toolbar>
-          <PermMedia className={classes.appBarIcon} />
-          <Typography variant="h6">React iTune Search</Typography>
-        </Toolbar>
-      </AppBar>
-      <ITuneSearch />
-    </Fragment>
+    <Provider store={store}>
+      <Fragment>
+        <CssBaseline />
+        <AppBar position="relative">
+          <Toolbar>
+            <PermMedia className={classes.appBarIcon} />
+            <Typography variant="h6">React iTune Search</Typography>
+          </Toolbar>
+        </AppBar>
+        <ITuneSearch />
+      </Fragment>
+    </Provider>
   );
 }
 

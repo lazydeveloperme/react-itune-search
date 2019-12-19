@@ -1,14 +1,18 @@
 import React from 'react';
 import { useFormik } from 'formik';
 import { TextField, Button, Grid, Box } from '@material-ui/core';
+import { useDispatch } from 'react-redux';
+import { getMedia } from '../store/media';
 
 function SearchForm() {
+  const dispatch = useDispatch();
+
   const formik = useFormik({
     initialValues: {
       search: ''
     },
-    onSubmit: (values) => {
-      alert(values.search);
+    onSubmit: ({ search }) => {
+      dispatch(getMedia(search));
     }
   });
 

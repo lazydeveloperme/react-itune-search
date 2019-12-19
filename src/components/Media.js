@@ -1,5 +1,6 @@
 import React from 'react';
 import { makeStyles, Button, Card, CardMedia, CardContent, CardActions, Grid, Typography } from '@material-ui/core';
+import { useSelector } from 'react-redux';
 
 const useStyles = makeStyles((theme) => ({
   cardMedia: {
@@ -9,6 +10,7 @@ const useStyles = makeStyles((theme) => ({
 
 function Media() {
   const classes = useStyles();
+  const { media, isLoading, error } = useSelector((state) => state.media);
 
   return (
     <Grid item xs={12} sm={6} md={4}>
