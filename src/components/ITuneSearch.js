@@ -26,7 +26,7 @@ function ITuneSearch() {
         <Box mt={3} display="flex" justifyContent="center">
           <CircularProgress />
         </Box>
-      ) : media.length == 0 ? (
+      ) : media.length === 0 ? (
         <Box mt={3}>
           <Typography variant="h5" align="center">
             No result found
