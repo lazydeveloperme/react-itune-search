@@ -1,5 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
+import media from './media';
 
-const store = configureStore({});
+const store = configureStore({ reducer: media });
 
-return store;
+export default store;

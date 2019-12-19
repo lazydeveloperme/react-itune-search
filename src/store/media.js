@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import Axios from 'axios';
+import axios from 'axios';
 
 const media = createSlice({
   name: 'media',
@@ -31,7 +31,7 @@ export default media.reducer;
 export const getMedia = (search) => async (dispatch) => {
   try {
     dispatch(getMediaStart());
-    const { data } = await Axios.get(`https://itunes.apple.com/search?term=${search}`);
+    const { data } = await axios.get(`https://itunes.apple.com/search?term=${search}`);
     dispatch(getMediaSuccess(data.results));
   } catch (error) {
     dispatch(getMediaFailed(error.toString()));
