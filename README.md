@@ -1,5 +1,7 @@
 # iTune Search React App
+
 **React** and **Material UI** test done by **Lazy Developer**
+
 https://lazydeveloperme.github.io/react-test-itune-search/
 
 ## Used Libraries
