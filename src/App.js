@@ -8,13 +8,6 @@ import store from './store';
 const useStyles = makeStyles((theme) => ({
   appBarIcon: {
     marginRight: theme.spacing(2)
-  },
-  searchGrid: {
-    marginTop: theme.spacing(3),
-    marginBottom: theme.spacing(3)
-  },
-  cardMedia: {
-    paddingTop: '56.25%' // 16:9
   }
 }));
 
