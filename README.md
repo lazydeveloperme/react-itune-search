@@ -4,8 +4,6 @@
 
 https://lazydeveloperme.github.io/react-test-itune-search/
 
-## Technology Stack
-
 ### State management
 **@reduxjs/toolkit** for reducing boilerplate of **redux**
 
