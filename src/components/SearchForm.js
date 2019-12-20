@@ -40,13 +40,22 @@ function SearchForm() {
             helperText={formik.errors.search}
             name="search"
             inputProps={formik.getFieldProps('search')}
-            label="Search Term"
+            label="Search Key"
+            placeholder="Search Key"
             fullWidth
             className={classes.textField}
           />
         </Grid>
         <Grid item xs={4} sm={3} lg={2}>
-          <Button type="submit" variant="contained" color="primary" size="large" fullWidth className={classes.button}>
+          <Button
+            type="submit"
+            variant="contained"
+            color="primary"
+            size="large"
+            fullWidth
+            className={classes.button}
+            data-testid="search"
+          >
             Search
           </Button>
         </Grid>

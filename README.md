@@ -4,19 +4,19 @@
 
 https://lazydeveloperme.github.io/react-test-itune-search/
 
-## Used Libraries
+## Technology Stack
 
-### Redux Toolkit
-Used for state and side effects management
+### State management
+**@reduxjs/toolkit** for reducing boilerplate of **redux**
 
-### Material UI
-Used as UI frameworks
+### UI
+**@material-ui** as UI framework
 
-### Formik
-Used for form handling
+### Form management
+**formik** for building form and **yup** for form validation
 
-### Yup
-Used for form validation
+### API consumption
+**axios** for API call and **redux-thunk** for side effects
 
-### Axios
-Used for API consumption
+### TDD
+**jest** and **@testing-library/react** for writting tests
