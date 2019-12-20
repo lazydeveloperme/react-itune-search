@@ -1,25 +1,20 @@
-## React iTune Search App
+# iTune Search React App
 
-React and Material UI test of LazyDeveloper.me
+**React** and **Material UI** test done by **Lazy Developer**
 
 ## Used Libraries
 
 ### Redux Toolkit
-
 Used for state and side effects management
 
 ### Material UI
-
 Used as UI frameworks
 
 ### Formik
-
 Used for form handling
 
 ### Yup
-
 Used for form validation
 
 ### Axios
-
 Used for API consumption
