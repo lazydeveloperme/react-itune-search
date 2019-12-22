@@ -1,20 +1,11 @@
-# iTune Search React App
+## iTune Search React Test App (React, Redux Toolkit, Formik, Material UI)
 
-**React** and **Material UI** test done by **Lazy Developer**
+### [Live demo](https://lazydeveloperme.github.io/react-test-itune-search/)
 
-https://lazydeveloperme.github.io/react-test-itune-search/
+### Libraries:
 
-### State management
-**@reduxjs/toolkit** for reducing boilerplate of **redux**
-
-### UI
-**@material-ui** as UI framework
-
-### Form management
-**formik** for building form and **yup** for form validation
-
-### API consumption
-**axios** for API call and **redux-thunk** for side effects
-
-### TDD
-**jest** and **@testing-library/react** for writting tests
+* **@reduxjs/toolkit** for reducing boilerplate of **redux**
+* **@material-ui** as UI framework
+* **formik** for building form and **yup** for form validation
+* **axios** for API call and **redux-thunk** for side effects
+* **jest** and **@testing-library/react** for writting tests
