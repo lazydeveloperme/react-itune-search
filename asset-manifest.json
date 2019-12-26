@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/react-test-itune-search/static/js/main.5443ce52.chunk.js",
-    "main.js.map": "/react-test-itune-search/static/js/main.5443ce52.chunk.js.map",
+    "main.js": "/react-test-itune-search/static/js/main.60d904fe.chunk.js",
+    "main.js.map": "/react-test-itune-search/static/js/main.60d904fe.chunk.js.map",
     "runtime-main.js": "/react-test-itune-search/static/js/runtime-main.e85dc7d3.js",
     "runtime-main.js.map": "/react-test-itune-search/static/js/runtime-main.e85dc7d3.js.map",
     "static/js/2.0d460498.chunk.js": "/react-test-itune-search/static/js/2.0d460498.chunk.js",
     "static/js/2.0d460498.chunk.js.map": "/react-test-itune-search/static/js/2.0d460498.chunk.js.map",
     "index.html": "/react-test-itune-search/index.html",
-    "precache-manifest.f990b67b085d0c7a0180f340a7c008e1.js": "/react-test-itune-search/precache-manifest.f990b67b085d0c7a0180f340a7c008e1.js",
+    "precache-manifest.e0fa89bbbe6c3f5040ee78a2be3f8526.js": "/react-test-itune-search/precache-manifest.e0fa89bbbe6c3f5040ee78a2be3f8526.js",
     "service-worker.js": "/react-test-itune-search/service-worker.js",
     "static/js/2.0d460498.chunk.js.LICENSE": "/react-test-itune-search/static/js/2.0d460498.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.e85dc7d3.js",
     "static/js/2.0d460498.chunk.js",
-    "static/js/main.5443ce52.chunk.js"
+    "static/js/main.60d904fe.chunk.js"
   ]
 }
