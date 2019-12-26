@@ -1,8 +1,8 @@
 {
-  "name": "react-test-itune-search",
+  "name": "react-itune-search",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://lazydeveloperme.github.io/react-test-itune-search",
+  "homepage": "http://lazydeveloperme.github.io/react-itune-search",
   "dependencies": {
     "@material-ui/core": "^4.8.0",
     "@material-ui/icons": "^4.5.1",
