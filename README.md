@@ -1,6 +1,6 @@
-## iTune Search React Test App (React, Redux Toolkit, Formik, Material UI)
+## iTune Search React App (React, Redux Toolkit, Formik, Material UI)
 
-### [Live demo](https://lazydeveloperme.github.io/react-test-itune-search/)
+### [Live demo](https://lazydeveloperme.github.io/react-itune-search/)
 
 ### Libraries:
 
